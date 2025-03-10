@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
+// MARK: - main
+let game = BaseBallGame()
+game.launch()
