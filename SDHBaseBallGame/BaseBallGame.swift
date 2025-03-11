@@ -8,7 +8,7 @@
 import Foundation
 
 final class BaseBallGame {
-    private let debug = false
+    private let DEBUG = false
     
     // MARK: - Game System Variable
     private let guessDigit = 3
@@ -92,7 +92,7 @@ private extension BaseBallGame {
                 gameHistory[historyCounter]! += 1
             }
             
-            if debug {
+            if DEBUG {
                 printDebugLog()
             }
         }
