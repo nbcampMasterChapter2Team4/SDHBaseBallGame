@@ -30,6 +30,11 @@
 			path = SDHBaseBallGame;
 			sourceTree = "<group>";
 		};
+		5B2440A32D804F310027D7E2 /* Images */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 		5B24407F2D7F00930027D7E2 = {
 			isa = PBXGroup;
 			children = (
+				5B2440A32D804F310027D7E2 /* Images */,
 				5B2440A12D7FC0190027D7E2 /* README.md */,
 				5B2440982D7F01970027D7E2 /* .gitignore */,
 				5B24408A2D7F00930027D7E2 /* SDHBaseBallGame */,
@@ -78,6 +84,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				5B24408A2D7F00930027D7E2 /* SDHBaseBallGame */,
+				5B2440A32D804F310027D7E2 /* Images */,
 			);
 			name = SDHBaseBallGame;
 			packageProductDependencies = (

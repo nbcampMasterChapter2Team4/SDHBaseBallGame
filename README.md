@@ -29,10 +29,8 @@
 - 첫번째 숫자로 0은 만들어지지 않습니다.
 2. Lv2
 - 정답을 맞추기 위해 3자리 수를 입력하고 힌트를 받습니다.
+- 올바르지 않은 입력값에 대해서 오류 문구가 보여집니다.
 - 3자리 숫자가 정답과 같은 경우 게임이 종료됩니다.
-<p align="center">
-  <img src="Lv2 실행 예시 이미지" alt="CampingMate Logo" width="300">
-</p>
 3. Lv4 + Lv5 + Lv6
 - 프로그램이 시작될 때 안내문구가 보여집니다.
 - 1을 입력하면 게임이 시작됩니다.
@@ -40,11 +38,11 @@
 - 3을 입력하면 프로그램이 종료됩니다.
 - 1, 2, 3 이외의 입력값에 대해서는 오류 메세지가 보여집니다.
 <p align="center">
-  <img src="Lv4 실행 예시 이미지" alt="CampingMate Logo" width="300">
+  <img src="Lv4_실행_예시_이미지.png" alt="Lv4 실행 예시 이미지" width="300">
 </p>
 <p align="center">
-  <img src="Lv5 실행 예시 이미지" alt="CampingMate Logo" width="300">
+  <img src="Lv5_실행_예시_이미지.png" alt="Lv5 실행 예시 이미지" width="300">
 </p>
 <p align="center">
-  <img src="Lv6 실행 예시 이미지" alt="CampingMate Logo" width="300">
+  <img src="Lv6_실행_예시_이미지.png" alt="Lv6 실행 예시 이미지" width="300">
 </p>
