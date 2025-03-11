@@ -37,12 +37,9 @@
 - 2를 입력하면 완료한 게임들에 대해 시도 횟수를 보여줍니다.
 - 3을 입력하면 프로그램이 종료됩니다.
 - 1, 2, 3 이외의 입력값에 대해서는 오류 메세지가 보여집니다.
-<p align="center">
-  <img src="Lv4_실행_예시_이미지.png" alt="Lv4 실행 예시 이미지" width="300">
-</p>
-<p align="center">
-  <img src="Lv5_실행_예시_이미지.png" alt="Lv5 실행 예시 이미지" width="300">
-</p>
-<p align="center">
-  <img src="Lv6_실행_예시_이미지.png" alt="Lv6 실행 예시 이미지" width="300">
-</p>
+
+[Lv4_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv4_실행_예시_이미지.png)
+
+[Lv5_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv5_실행_예시_이미지.png)
+
+[Lv6_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv6_실행_예시_이미지.png)
