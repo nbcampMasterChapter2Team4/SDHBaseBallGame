@@ -21,6 +21,7 @@
 /* Begin PBXFileReference section */
 		5B2440882D7F00930027D7E2 /* SDHBaseBallGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDHBaseBallGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2440982D7F01970027D7E2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5B2440A12D7FC0190027D7E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +46,7 @@
 		5B24407F2D7F00930027D7E2 = {
 			isa = PBXGroup;
 			children = (
+				5B2440A12D7FC0190027D7E2 /* README.md */,
 				5B2440982D7F01970027D7E2 /* .gitignore */,
 				5B24408A2D7F00930027D7E2 /* SDHBaseBallGame */,
 				5B2440892D7F00930027D7E2 /* Products */,
