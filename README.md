@@ -38,8 +38,8 @@
 - 3을 입력하면 프로그램이 종료됩니다.
 - 1, 2, 3 이외의 입력값에 대해서는 오류 메세지가 보여집니다.
 
-[Lv4_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv4_실행_예시_이미지.png)
+![Lv4_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv4_실행_예시_이미지.png)
 
-[Lv5_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv5_실행_예시_이미지.png)
+![Lv5_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv5_실행_예시_이미지.png)
 
-[Lv6_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv6_실행_예시_이미지.png)
+![Lv6_실행_예시_이미지.png](https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv6_실행_예시_이미지.png)
