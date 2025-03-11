@@ -107,7 +107,7 @@ private extension BaseBallGame {
         
         // 정답 생성
         var randIntArr: [Int] = []
-        for i in 0...guessDigit - 1 {
+        for i in 0..<guessDigit {
             var randInt: Int
             if i == 0 {
                 randInt = Int.random(in: 1...9)
@@ -126,7 +126,7 @@ private extension BaseBallGame {
     func preprocessInput(_ input: String) -> Bool {
         userAnswer = []
         if input.count == guessDigit {
-            for i in 0...guessDigit - 1 {
+            for i in 0..<guessDigit {
                 let inputIndex = input.index(input.startIndex, offsetBy: i)
                 guard let inputNumAtIndex = input[inputIndex].wholeNumberValue else {
                     printAnswerError()
@@ -160,7 +160,7 @@ private extension BaseBallGame {
             strikeCounter = 0
             ballCounter = 0
             
-            for i in 0...guessDigit - 1 {
+            for i in 0..<guessDigit {
                 let userAnswerIndex = userAnswer.index(userAnswer.startIndex, offsetBy: i)
                 let correctAnswerIndex = correctAnswer.index(correctAnswer.startIndex, offsetBy: i)
                 let userAnswerNumAtIndex = userAnswer[userAnswerIndex]
