@@ -45,19 +45,19 @@
 
 
 <p align="center">
-<img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv4_실행_예시_이미지.png" alt="CampingMate Logo" width="600">
+<img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Resources/Lv4_실행_예시_이미지.png" alt="Lv4 실행 예시 이미지" width="600">
 <br/>
 Lv4 실행 예시 이미지
 <br/>
 <br/>
 
-<img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv5_실행_예시_이미지.png" alt="CampingMate Logo" width="600">
+<img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Resources/Lv5_실행_예시_이미지.png" alt="Lv5 실행 예시 이미지" width="600">
 <br/>
 Lv5 실행 예시 이미지
 <br/>
 <br/>
 
-<img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Images/Lv6_실행_예시_이미지.png" alt="CampingMate Logo" width="600">
+<img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Resources/Lv6_실행_예시_이미지.png" alt="Lv6 실행 예시 이미지" width="600">
 <br/>
 Lv6 실행 예시 이미지
 </p>

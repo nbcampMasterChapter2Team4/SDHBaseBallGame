@@ -74,6 +74,7 @@ private extension BaseBallGame {
         exit(0)
     }
     
+    // 메뉴에서 사용자가 잘못된 입력을 했을 때 오류 출력
     func printInputError() {
         print("올바른 숫자를 입력해주세요\n")
     }
@@ -89,7 +90,7 @@ private extension BaseBallGame {
             let input = getUserInput()
             if preprocessInput(input) {
                 isGameOver = compareAnswer()
-                gameHistory[historyCounter]! += 1
+                gameHistory[historyCounter, default: 0] += 1
             }
             
             if DEBUG {
@@ -122,7 +123,7 @@ private extension BaseBallGame {
         self.correctAnswer = randIntArr
     }
     
-    // 게임 중 입력 전처리
+    // 사용자 입력 전처리(String => Int)
     func preprocessInput(_ input: String) -> Bool {
         userAnswer = []
         if input.count == guessDigit {
@@ -152,6 +153,7 @@ private extension BaseBallGame {
         return true
     }
     
+    // 전처리한 사용자 입력과 정답 비교
     func compareAnswer() -> Bool {
         if userAnswer == correctAnswer {
             print("정답입니다!\n")
@@ -188,10 +190,12 @@ private extension BaseBallGame {
         return false
     }
     
+    // 게임 중 사용자가 잘못된 입력을 했을 때 오류 출력
     func printAnswerError() {
         print("올바르지 않은 입력값입니다\n")
     }
     
+    // 디버그 로그
     func printDebugLog() {
         print("-------- 디버그 로그 --------")
         print(correctAnswer)
