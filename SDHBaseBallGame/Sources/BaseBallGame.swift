@@ -5,15 +5,17 @@
 //  Created by 서동환 on 3/10/25.
 //
 
+// TODO: UX 고민) 게임 종료 확인, GUI 도입
+
 import Foundation
 
 final class BaseBallGame {
-    private let DEBUG = false
+    private let D_E_B_U_G = false
     
     // MARK: - Game System Variable
     private let guessDigit = 3
     private var historyCounter = 0
-    private var gameHistory: [Int: Int] = [:]  // [historyCounter: 시도 횟수]
+    private var gameHistory: [Int: Int] = [:]  // [historyCounter: (시도 횟수)]
     private var userInput = ""
     
     
@@ -27,8 +29,8 @@ final class BaseBallGame {
     
     // MARK: - Game Launch Method
     func launch() {
-        print("환영합니다! 원하시는 번호를 입력해주세요")
         while true {
+            print("환영합니다! 원하시는 번호를 입력해주세요")
             print("1. 게임 시작하기    2. 게임 기록 보기    3. 종료하기")
             if let menu = Int(getUserInput()) {
                 switch menu {
@@ -61,9 +63,7 @@ private extension BaseBallGame {
     
     func showGameRecord() {
         print("\n< 게임 기록 보기 >")
-        let sortedGameHistory = gameHistory.sorted {
-            $0.key < $1.key
-        }
+        let sortedGameHistory = gameHistory.sorted { $0.key < $1.key }
         for iter in sortedGameHistory {
             print("\(iter.key)번째 게임: 시도 횟수 - \(iter.value)")
         }
@@ -93,7 +93,7 @@ private extension BaseBallGame {
                 gameHistory[historyCounter, default: 0] += 1
             }
             
-            if DEBUG {
+            if D_E_B_U_G {
                 printDebugLog()
             }
         }
@@ -138,7 +138,7 @@ private extension BaseBallGame {
                     printAnswerError()
                     return false
                 }
-
+                
                 if userAnswer.contains(inputNumAtIndex) {
                     printAnswerError()
                     return false
