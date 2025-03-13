@@ -5,8 +5,6 @@
 //  Created by 서동환 on 3/10/25.
 //
 
-// TODO: UX 고민) 게임 종료 확인, GUI 도입
-
 import Foundation
 
 final class BaseBallGame {
@@ -14,6 +12,7 @@ final class BaseBallGame {
     
     // MARK: - Game System Variable
     private let guessDigit = 3
+    private var randIntArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     private var historyCounter = 0
     private var gameHistory: [Int: Int] = [:]  // [historyCounter: (시도 횟수)]
     private var userInput = ""
@@ -63,15 +62,38 @@ private extension BaseBallGame {
     
     func showGameRecord() {
         print("\n< 게임 기록 보기 >")
-        let sortedGameHistory = gameHistory.sorted { $0.key < $1.key }
-        for iter in sortedGameHistory {
-            print("\(iter.key)번째 게임: 시도 횟수 - \(iter.value)")
+        if gameHistory.isEmpty {
+            print("플레이한 게임이 없습니다.")
+        } else {
+            let sortedGameHistory = gameHistory.sorted { $0.key < $1.key }
+            for iter in sortedGameHistory {
+                print("\(iter.key)번째 게임: 시도 횟수 - \(iter.value)")
+            }
         }
+        print()
     }
     
     func exitGame() {
-        print("\n< 숫자 야구 게임을 종료합니다 >")
-        exit(0)
+        print("\n종료하시겠습니까?")
+        while true {
+            print("1. 예    2. 아니오")
+            guard let inputNum = Int(getUserInput()) else {
+                printInputError()
+                continue
+            }
+            switch inputNum {
+            case 1:
+                print("\n< 숫자 야구 게임을 종료합니다 >")
+                exit(0)
+                break
+            case 2:
+                print()
+                return
+            default:
+                printInputError()
+                continue
+            }
+        }
     }
     
     // 메뉴에서 사용자가 잘못된 입력을 했을 때 오류 출력
@@ -107,20 +129,14 @@ private extension BaseBallGame {
         gameHistory[historyCounter] = 0
         
         // 정답 생성
-        var randIntArr: [Int] = []
+        randIntArr.shuffle()
         for i in 0..<guessDigit {
-            var randInt: Int
-            if i == 0 {
-                randInt = Int.random(in: 1...9)
-            } else {
-                randInt = Int.random(in: 0...9)
-                while randIntArr.contains(randInt) {
-                    randInt = Int.random(in: 0...9)
-                }
+            var randInt = randIntArr[i]
+            if i == 0 && randInt == 0 {
+                randInt = randIntArr.last!
             }
-            randIntArr.append(randInt)
+            correctAnswer.append(randInt)
         }
-        self.correctAnswer = randIntArr
     }
     
     // 사용자 입력 전처리(String => Int)
@@ -198,6 +214,7 @@ private extension BaseBallGame {
     // 디버그 로그
     func printDebugLog() {
         print("-------- 디버그 로그 --------")
+        print(randIntArr)
         print(correctAnswer)
         print(userAnswer)
         print(strikeCounter)
