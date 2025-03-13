@@ -11,22 +11,23 @@ final class BaseBallGame {
     private let D_E_B_U_G = false
     
     // MARK: - Game System Variable
+    
     private let guessDigit = 3
     private var randIntArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     private var historyCounter = 0
     private var gameHistory: [Int: Int] = [:]  // [historyCounter: (시도 횟수)]
     private var userInput = ""
     
-    
     // MARK: - Gaming Variable
+    
     private var isGameOver = false
     private var correctAnswer: [Int] = []
     private var userAnswer: [Int] = []
     private var strikeCounter = 0
     private var ballCounter = 0
     
-    
     // MARK: - Game Launch Method
+    
     func launch() {
         while true {
             print("환영합니다! 원하시는 번호를 입력해주세요")
@@ -101,8 +102,8 @@ private extension BaseBallGame {
         print("올바른 숫자를 입력해주세요\n")
     }
     
-    
     // MARK: - Gaming Methods
+    
     func gameStart() {
         initGame()
         print("\n< 게임을 시작합니다 >")
