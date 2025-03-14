@@ -40,6 +40,7 @@
 - 1, 2, 3 이외의 입력값에 대해서는 오류 메세지가 보여집니다.
 <br/>
 
+## 실행 이미지
 
 <p align="center">
 <img src="https://github.com/nbcampMasterChapter2Team4/SDHBaseBallGame/blob/main/Resources/Lv4_실행_예시_이미지.png" alt="Lv4 실행 예시 이미지" width="600">
