@@ -1,8 +1,7 @@
 #  SDHBaseBallGame(숫자 야구 게임)
 
-> SDHBaseBallGame은 숫자 야구 게임을 기반으로 개발한 게임입니다.
-
-<br/><br/>
+> SDHBaseBallGame은 숫자 야구 게임을 기반으로 개발한 macOS Command Line Tool 게임입니다.
+<br/>
 
 ## 프로젝트 개요
 
@@ -10,11 +9,7 @@
 - 각 자리의 숫자와 위치가 모두 맞으면 '스트라이크', 숫자만 맞고 위치가 다르면 '볼'로 판정됩니다.
 - 예를 들어, 상대방의 숫자가 123일 때 132를 추리하면 1스트라이크 2볼이 됩니다.
 - 이러한 힌트를 활용하여 상대방의 숫자를 추리해 나가는 게임입니다.
-SDHBaseBallGame은 숫자 야구 게임을 사용자와 컴퓨터간에 1vs1 대결 방식으로 개발한 게임입니다.
 <br/>
-
-**SDHBaseBallGame**은 macOS의 Command Line Tool로써 개발되었습니다.
-<br/><br/>
 
 ## 프로젝트 일정
 
